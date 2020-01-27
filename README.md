@@ -1,4 +1,4 @@
-# IsBetween.js
+# IsBetween.js [![Build Status](https://travis-ci.com/raymonschouwenaar/is-between-js.svg?branch=master)](https://travis-ci.com/raymonschouwenaar/is-between-js)
 
 ## How to use?
 
