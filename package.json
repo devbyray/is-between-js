@@ -1,6 +1,6 @@
 {
   "name": "is-between-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Check if a number is between a minimum or maximum",
   "keywords": [
     "number",
@@ -63,7 +63,9 @@
     ],
     "coveragePathIgnorePatterns": [
       "/node_modules/",
-      "/test/"
+      "/test/",
+      "/package.json",
+      "/package-lock.json"
     ],
     "coverageThreshold": {
       "global": {
