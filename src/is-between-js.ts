@@ -48,7 +48,7 @@ export class Between {
   }
 }
 
-export function between(value: number) {
+export function isBetween(value: number) {
   const func = new Between()
   return func.value(value)
 }

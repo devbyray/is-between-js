@@ -1,40 +1,41 @@
-import { between } from '../src/is-between-js'
+import { Between, isBetween } from '../src/is-between-js'
 
 /**
  * Dummy test
  */
 describe('isBetween test', () => {
   it('works if isBetween is truthy', () => {
-    expect(between).toBeDefined()
+    expect(isBetween).toBeDefined()
+    expect(Between).toBeDefined()
   })
 
   it('isBetween returns true', () => {
     expect(
-      between(10)
+      isBetween(10)
         .min(0)
         .max(100)
         .calc()
     ).toBe(true)
     expect(
-      between(1)
+      isBetween(1)
         .min(0)
         .max(10)
         .calc()
     ).toBe(true)
     expect(
-      between(-5)
+      isBetween(-5)
         .min(-10)
         .max(10)
         .calc()
     ).toBe(true)
     expect(
-      between(1.2)
+      isBetween(1.2)
         .min(0)
         .max(2)
         .calc()
     ).toBe(true)
     expect(
-      between(3.52)
+      isBetween(3.52)
         .min(3.52)
         .max(3.53)
         .calc()
@@ -42,7 +43,7 @@ describe('isBetween test', () => {
   })
   it('isBetween returns false', () => {
     expect(
-      between(10)
+      isBetween(10)
         .min(0)
         .max(9)
         .calc()
@@ -50,7 +51,7 @@ describe('isBetween test', () => {
   })
   it('isBetween returns error', () => {
     expect(() =>
-      between(10)
+      isBetween(10)
         .min(15)
         .max(9)
         .calc()
