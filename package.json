@@ -1,6 +1,6 @@
 {
   "name": "is-between-js",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Check if a number is between a minimum or maximum",
   "keywords": [
     "javascript",
@@ -42,7 +42,9 @@
     "precommit": "lint-staged",
     "travis-deploy-once": "travis-deploy-once",
     "tscov": "tscov --min-coverage 90",
-    "tscov:d": "tscov --details"
+    "tscov:d": "tscov --details",
+    "prepush": "npm run test:prod && npm run build",
+    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
