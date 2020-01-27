@@ -1,7 +1,7 @@
 // Import here Polyfills if needed. Recommended core-js (npm i -D core-js)
 // import "core-js/fn/array.find"
 // ...
-export default function isBetween(value: number, min: number, max: number): Boolean {
+export default function isBetween(value: number, min: number, max: number): boolean {
   const valueNumber = parseFloat(value.toString())
   const minNumber = parseFloat(min.toString())
   const maxNumber = parseFloat(max.toString())
@@ -20,9 +20,9 @@ export default function isBetween(value: number, min: number, max: number): Bool
   return equal || inRange
 }
 
-function isFalsy(input: any): Boolean {
+function isFalsy(input: any): boolean {
   return input === null || input === undefined || input.length === 0
 }
-function isTruthy(input: any): Boolean {
+function isTruthy(input: any): boolean {
   return input !== null || input !== undefined || input.length !== 0
 }
