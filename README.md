@@ -2,6 +2,11 @@
 [![Build Status](https://travis-ci.com/raymonschouwenaar/is-between-js.svg?branch=master)](https://travis-ci.com/raymonschouwenaar/is-between-js)
 [![npm version](https://badge.fury.io/js/is-between-js.svg)](https://badge.fury.io/js/is-between-js)
 
+## Install
+```
+npm i is-between-js
+```
+
 ## How to use?
 
 You can import the isBetween function in your JavaScript/TypeScript file and use it like this!
