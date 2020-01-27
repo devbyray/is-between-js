@@ -1,8 +1,11 @@
 {
   "name": "is-between-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Check if a number is between a minimum or maximum",
   "keywords": [
+    "javascript",
+    "typescript",
+    "nodejs",
     "number",
     "check",
     "range",
@@ -37,7 +40,9 @@
     "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
     "precommit": "lint-staged",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "tscov": "tscov --min-coverage 90",
+    "tscov:d": "tscov --details"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
@@ -89,6 +94,7 @@
   "devDependencies": {
     "@commitlint/cli": "^7.1.2",
     "@commitlint/config-conventional": "^7.1.2",
+    "@liftr/tscov": "^1.4.4",
     "@types/jest": "^23.3.2",
     "@types/node": "^10.11.0",
     "colors": "^1.3.2",
