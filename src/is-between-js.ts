@@ -29,7 +29,7 @@ export class Between {
   }
 
   private isRange(): boolean {
-    return this.valueNumber > this.minNumber && this.valueNumber < this.maxNumber
+    return this.valueNumber >= this.minNumber && this.valueNumber <= this.maxNumber
   }
 
   public calculate(): boolean {

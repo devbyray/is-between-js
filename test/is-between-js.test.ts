@@ -40,6 +40,12 @@ describe('isBetween test', () => {
         .max(3.53)
         .calc()
     ).toBe(true)
+    expect(
+      isBetween(1500)
+        .min(1001)
+        .max(1500)
+        .calc()
+    ).toBe(true)
   })
   it('isBetween returns false', () => {
     expect(
